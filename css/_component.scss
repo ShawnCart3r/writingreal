@@ -1,0 +1,39 @@
+.title{
+       margin-top: 220px;
+
+       &__name{
+           text-transform: uppercase;
+           font-weight: 400;
+           text-align: center;
+       }
+
+       &__labels{
+        font-style: italic;
+        text-align: center;
+       }
+
+       &__list{
+           text-align: center;
+           margin-right: 50px;
+
+       }
+       &__lists{
+           text-decoration: underline;
+       }
+}
+
+
+.image-side{
+    width: 400px;
+  
+  
+
+    &__pic{
+        
+        text-align: center;
+        width: 200%;
+        border-radius: 50%;
+    }
+
+
+}
