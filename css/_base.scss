@@ -1,3 +1,21 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+ 
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .container{
     
     display: grid;
@@ -14,3 +32,27 @@ ul{
         }
     }
 }
+
+.container2{
+    background-color: snow;
+    box-shadow: black;
+    margin: 8rem auto;
+    max-width: 120rem;
+    min-height: 10rem;
+    border-style: solid;
+    border-color: grey;
+    a{
+        color: white;
+    }
+
+    p{
+        color: black;
+    }
+    .text{
+        color: black;
+        text-decoration:underline;
+        text-transform: uppercase;
+    }
+
+}
+

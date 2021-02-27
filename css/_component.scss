@@ -1,3 +1,5 @@
+//front-page
+
 .title{
        margin-top: 220px;
 
@@ -37,3 +39,151 @@
 
 
 }
+
+//nav for other pages
+nav.grid {
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-gap: 10px;
+        justify-content: center;
+        justify-items: center;
+
+        @media (min-width: 600px){
+            grid-template-columns: 1fr repeat(3, fit-content(50px));
+            grid-gap: 20px;
+            justify-items: end;
+        }
+    }
+
+    .fullwidth {
+        grid-column: 1 / 4;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+
+        @media (min-width: 600px){
+            grid-column: 1 / 2;
+            justify-self: start;
+        }
+    }
+}
+
+//card
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+   
+  }
+
+  .wrapper2 {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .cards li {
+    border: 2px solid #490A3D;
+    border-radius:5px;
+    background-color: white;
+    color: #fff;
+    flex: 1 1 200px;
+  }
+  
+  .cards h2 {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .cards p {
+    padding: 10px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .flex li {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+
+  .text{
+      color: black;
+  }
+  
+ //stories
+
+ .story{
+    
+    &__card{
+    background-color: snow;
+    box-shadow: black;
+    margin: 4rem auto;
+    max-width: 25rem;
+    min-height: 1rem;
+    border-style: solid;
+    border-color: grey;
+
+
+
+    }
+     &__title{
+
+         text-align: center;
+     }
+
+     &__chapter{
+         text-align: center;
+         text-decoration: underline;
+     }
+
+     &__main{
+        background-color: snow;
+        box-shadow: black;
+        margin: 2rem auto;
+        max-width: 200rem;
+        min-height: 1rem;
+        border-style: solid;
+        border-color: grey;
+
+
+    
+     }
+
+     &__indented{
+         padding-left: 50pt;
+         padding-right: 50pt;
+         line-height: 1.6;
+     }
+
+     &__back{
+        background-color: snow;
+        box-shadow: black;
+        margin: 4rem auto;
+        max-width: 8rem;
+        min-height: 1rem;
+        border-style: solid;
+        border-color: grey;
+         text-align: center;
+         text-transform: uppercase;
+        
+         a{
+             color: black;
+             text-decoration: none;
+         }
+
+     }
+
+ }
